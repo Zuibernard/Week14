@@ -13,6 +13,7 @@ public class Shooter : MonoBehaviour
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
+            // ยิง Ray จากเมาส์
             Ray ray = Camera.main.ScreenPointToRay(screenPos);
             Debug.DrawRay(ray.origin, ray.direction * 5f, Color.red, 5f);
 
